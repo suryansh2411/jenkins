@@ -27,7 +27,7 @@ RUN apt update && apt install -y tcl
 # Install php
 RUN apt install php libapache2-mod-php php-mysql -y
 
-RUN apt install -y php-xml php-gettext php-gd php-intl php-xmlrpc php-curl php-soap
+RUN apt install -y php-xml php-gettext php-gd php-intl php-xmlrpc php-curl php-soap php-zip
 
 #restart apache
 RUN service apache2 restart
