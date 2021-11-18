@@ -12,14 +12,14 @@ RUN apt-get install -y apt-utils
 # Create moodledata directory
 RUN mkdir -p /var/www/moodledata
 # Assign permission to moodledata
-RUN chmod -R 0777 /var/www/moodledata
+#RUN chmod -R 0777 /var/www/moodledata
 # Git installstion
 RUN apt install -y git
 # Clone a repository
-RUN git clone git://git.moodle.org/moodle.git
+#RUN git clone git://git.moodle.org/moodle.git
 # Move the repo to desired location
-RUN mv moodle /var/www/html/
-
+#RUN mv moodle /var/www/html/
+COPY index.php
 # Install and run apache
 RUN apt-get install -y apache2
 # and then:
