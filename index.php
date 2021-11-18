@@ -1,1 +1,1 @@
-echo "Hello world pipe";
+echo "Hello world pipe2";
